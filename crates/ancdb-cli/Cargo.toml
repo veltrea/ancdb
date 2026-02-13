@@ -1,0 +1,15 @@
+[package]
+name = "ancdb-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+ancdb-core = { path = "../ancdb-core" }
+ancdb-protocol = { path = "../ancdb-protocol" }
+clap = { version = "4.4", features = ["derive"] }
+rmp-serde = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.35", features = ["full"] }
