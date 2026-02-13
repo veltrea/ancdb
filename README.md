@@ -54,6 +54,21 @@ ANC-DB (AI-Native Core Database) は、AIエージェントによる直接操作
 - **Language**: Rust / C (Shim)
 - **Protocol**: MessagePack (Length-prefixed Frame)
 
+## クイックスタート
+
+### 1. ビルド
+```bash
+cargo build --release
+```
+
+### 2. 起動 (CLI)
+```bash
+./target/release/ancdb-cli --db-path my-ai-storage.db
+```
+
+### プロトコル経由の操作
+AIエージェントやクライアントは、`CreateTable`, `Put`, `DirectRead`, `RangeScan` といったコマンドをバイナリ形式で送出します。詳細は `ANC-DB-SPEC-STRICT-v1.2.md` を参照してください。
+
 ## ライセンス / License
 
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
