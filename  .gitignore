@@ -1,0 +1,6 @@
+# User Private Files (Exclude from Public Release)
+docs/
+LICENSE.ja.md
+ancdb-dev.db
+target/
+*.db

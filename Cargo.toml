@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/ancdb-core",
+    "crates/ancdb-protocol",
+    "crates/ancdb-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["veltrea <veltrea@outlook.com>"]
+license = "Apache-2.0"
